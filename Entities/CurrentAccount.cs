@@ -32,9 +32,9 @@ namespace sistema_bancario_csharp.Entities
                 Console.WriteLine("Value exceeded");
             }
         }
-        public sealed override string ToString()
+        public override string ToString()
         {
-            return base.ToString() ;
+            return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: {Balance}, Loan limit: {LoanLimit}";
         }
     }
 }

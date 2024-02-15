@@ -1,0 +1,15 @@
+C:\Projetos\sistema-bancario-csharp\bin\Debug\net8.0\sistema-bancario-csharp.exe
+C:\Projetos\sistema-bancario-csharp\bin\Debug\net8.0\sistema-bancario-csharp.deps.json
+C:\Projetos\sistema-bancario-csharp\bin\Debug\net8.0\sistema-bancario-csharp.runtimeconfig.json
+C:\Projetos\sistema-bancario-csharp\bin\Debug\net8.0\sistema-bancario-csharp.dll
+C:\Projetos\sistema-bancario-csharp\bin\Debug\net8.0\sistema-bancario-csharp.pdb
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.AssemblyInfoInputs.cache
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.AssemblyInfo.cs
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.csproj.CoreCompileInputs.cache
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.sourcelink.json
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.dll
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\refint\sistema-bancario-csharp.dll
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.pdb
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\sistema-bancario-csharp.genruntimeconfig.cache
+C:\Projetos\sistema-bancario-csharp\obj\Debug\net8.0\ref\sistema-bancario-csharp.dll

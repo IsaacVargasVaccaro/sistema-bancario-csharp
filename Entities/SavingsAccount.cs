@@ -13,7 +13,7 @@ namespace sistema_bancario_csharp.Entities
 
         }
 
-        public sealed override string ToString()
+        public override string ToString()
         {
             return base.ToString();
         }

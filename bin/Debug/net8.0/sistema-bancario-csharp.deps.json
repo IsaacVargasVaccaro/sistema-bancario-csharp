@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "sistema-bancario-csharp/1.0.0": {
+        "runtime": {
+          "sistema-bancario-csharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sistema-bancario-csharp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

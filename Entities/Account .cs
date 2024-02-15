@@ -1,4 +1,5 @@
 using System;
+using sistema_bancario_csharp.Entities.Exceptions;
 
 
 namespace sistema_bancario_csharp.Entities
@@ -28,6 +29,46 @@ namespace sistema_bancario_csharp.Entities
        
        public Account (int number, string holder, string email, decimal balance)
        {
+                if(number < 0) 
+                {
+                    throw new ArgumentException ("The account number must be greater than zero.");
+                }
+                if (number != (int)number)
+                {
+                    throw new ArgumentException("The account number must be an integer.");
+                }
+                if (number == null) 
+                {
+                    throw new ArgumentNullException("The field cannot be blank.");
+
+                }
+                if (holder != (string)holder)
+                {
+                    throw new Exception("The holder's name is invalid.");
+
+                }
+                 if (holder == null)
+                {
+                    throw new ArgumentNullException("The field cannot be blank.");
+                }
+                if (email != (string)email)
+                {
+                    throw new ArgumentException ("The email is invalid.");
+                }
+                if (!email.Contains("@"))
+                {
+                    throw new ArgumentException ("The email is invalid.");
+                }
+                if (email == null) 
+                {
+                    throw new ArgumentNullException("The field cannot be blank.");
+                }
+                if (balance < 0)
+                {
+                    throw new ArgumentException ("The balance must be greater than zero.");
+                }
+
+       
         Number = number;
         Holder = holder;
         Email = email;
@@ -38,6 +79,14 @@ namespace sistema_bancario_csharp.Entities
        public void Withdraw (decimal amount)
        {
         Balance -= amount;
+
+        if (amount > Balance)
+        {
+            throw new DomainExceptions ("low balance.");
+        }
+
+
+
        }
        public void Deposit (decimal amount)
        {
@@ -46,13 +95,7 @@ namespace sistema_bancario_csharp.Entities
 
        public virtual string ToString()
        {
-        return Number 
-        + " , " 
-        + Holder 
-        + " , "
-        + Email
-        + " , R$ "
-        + Balance;
+        return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: {Balance}";
        }
     }
 }
