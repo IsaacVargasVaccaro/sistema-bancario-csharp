@@ -31,23 +31,18 @@ namespace sistema_bancario_csharp.Entities
        {
                 if(number < 0) 
                 {
-                    throw new ArgumentException ("The account number must be greater than zero.");
+                    throw new Exception ("The account number must be greater than zero.");
                 }
                 if (number != (int)number)
                 {
                     throw new ArgumentException("The account number must be an integer.");
                 }
-                if (number == null) 
-                {
-                    throw new ArgumentNullException("The field cannot be blank.");
-
-                }
+                
                 if (holder != (string)holder)
                 {
                     throw new Exception("The holder's name is invalid.");
-
                 }
-                 if (holder == null)
+                 if (string.IsNullOrWhiteSpace(holder))
                 {
                     throw new ArgumentNullException("The field cannot be blank.");
                 }
@@ -59,7 +54,7 @@ namespace sistema_bancario_csharp.Entities
                 {
                     throw new ArgumentException ("The email is invalid.");
                 }
-                if (email == null) 
+                if (string.IsNullOrWhiteSpace(email)) 
                 {
                     throw new ArgumentNullException("The field cannot be blank.");
                 }
@@ -85,15 +80,13 @@ namespace sistema_bancario_csharp.Entities
             throw new DomainExceptions ("low balance.");
         }
 
-
-
        }
        public void Deposit (decimal amount)
        {
         Balance += amount;
        }
 
-       public virtual string ToString()
+       public override string ToString()
        {
         return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: {Balance}";
        }
