@@ -34,7 +34,7 @@ namespace sistema_bancario_csharp.Entities
         }
         public override string ToString()
         {
-            return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: {Balance}, Loan limit: {LoanLimit}";
+            return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: R$ {Balance}, Loan limit: R$ {LoanLimit}";
         }
     }
 }

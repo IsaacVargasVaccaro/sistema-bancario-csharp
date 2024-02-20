@@ -83,7 +83,7 @@ namespace sistema_bancario_csharp
             Console.WriteLine("4 - Summary");
             Console.WriteLine("5 - Exit");
 
-
+            try{
             switch(Console.ReadLine())
             {
                 case "1":
@@ -126,10 +126,23 @@ namespace sistema_bancario_csharp
                 break;   
                  }
 
-                 Console.WriteLine("Please, Press any key to continue.");
-//ver o porque não esta imprimindo quando coloca o 4 e continuar o programa 
-//colocando o 5 para sair do programa, apos isso verificar se o programa está rodando corretamente
+                
+                 }
+
+                 catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+
+                finally
+                {
+                    Console.WriteLine("Please, Press any key to continue.");
+                    Console.ReadKey();
+                }
+                 
+
             }
+        
 
            }
       

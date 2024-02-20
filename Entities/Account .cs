@@ -73,12 +73,14 @@ namespace sistema_bancario_csharp.Entities
 
        public void Withdraw (decimal amount)
        {
-        Balance -= amount;
+        
 
         if (amount > Balance)
         {
             throw new DomainExceptions ("low balance.");
         }
+
+        Balance -= amount;
 
        }
        public void Deposit (decimal amount)
@@ -88,7 +90,7 @@ namespace sistema_bancario_csharp.Entities
 
        public override string ToString()
        {
-        return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: {Balance}";
+        return $"Number: {Number}, Holder: {Holder}, Email: {Email}, Balance: R$ {Balance}";
        }
     }
 }
